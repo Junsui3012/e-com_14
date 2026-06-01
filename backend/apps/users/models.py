@@ -26,7 +26,7 @@ class User(AbstractUser):
     def __str__(self):
         return self.email
     
-class Addresses(models.Model):
+class Address(models.Model):
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
